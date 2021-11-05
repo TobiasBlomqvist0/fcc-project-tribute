@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <section id="main">
+        <div class="title">
+            <h1 id="title">Giveaway survey form</h1>
+        </div>
+        <div class="description">
+            <p id="description">Arctic pro wireless</p>
+        </div>
+
+        <form id="survey-form">
+            <div class="info-input">
+                <label id="name-label" type="text" for="name">Enter full name</label> <br>
+                <input id="name" type="name" class="input-name" placeholder="Enter your full name" required> <br>
+
+                <label id="email-label" type="text" for="email">Enter email</label> <br>
+                <input id="email" type="email" class="input-email" placeholder="Enter your email" required> <br>
+
+                <label id="number-label" type="text" for="number">Enter phone number</label> <br>
+                <input id="number" type="number" class="input-number" min="10" max="99" placeholder="Enter phone number"
+                    required> <br>
+            </div>
+
+            <div>
+                <label id="features-label" type="text">Any features you especially like?</label> <br>
+                <label><input id="input-checkbox" value="wireless" type="checkbox">Wireless</label> <br>
+                <label><input id="input-checkbox" value="Swappable batterys" type="checkbox">Swappable batterys</label>
+                <br>
+                <label><input id="input-checkbox" value="none" type="checkbox">None</label> <br>
+                </select> <br>
+            </div>
+
+            <div>
+                <label id="products-label" type="text">Do you own any of our products</label> <br>
+                <select id="dropdown" required>
+                    <option disabled selected value>Products</option>
+                    <option value="Headset">Headset</option>
+                    <option value="keyboard">Keyboard</option>
+                    <option value="mouse">Mouse</option>
+                    <option value="mousepad">Mousepad</option>
+                </select> <br>
+            </div>
+
+            <div>
+                <label id="recomend-label" type="text">Would you recomend it?</label> <br>
+                <label for="yes"><input id="option-yes" value="yes" type="radio" name="yes-no-maybe"
+                        required>Yes</label>
+                <br>
+                <label for="no"><input id="option-no" value="no" type="radio" name="yes-no-maybe" required>No</label>
+                <br>
+                <label for="maybe"><input id="option-maybe" value="maybe" type="radio" name="yes-no-maybe"
+                        required>Maybe</label> <br>
+            </div>
+
+            <div>
+                <label id="commets-label" type="text">Any comments or suggestions?</label> <br>
+                <textarea name="comment" id="comment" placeholder="Enter comments here" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="button">
+                <button id="submit">
+                    Submit
+                </button>
+            </div>
+    </section>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
